@@ -151,14 +151,6 @@ public class ls {
 	// Definition Stage
 	private Options createOptions() {
 		Options options = new Options();
-
-		// add options by using OptionBuilder
-		options.addOption(Option.builder("m").longOpt("path")
-				.desc("Set a path of a directory or a file to display")
-				.hasArg()
-				.argName("Path name to display")
-				//.required()
-				.build());
 		
 		options.addOption(Option.builder("a").longOpt("all")
 				.desc("Display all files")
